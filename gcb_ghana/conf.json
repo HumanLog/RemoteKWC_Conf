@@ -1,0 +1,54 @@
+{
+    "localFolderPath": "experiancontract",
+    "saveUrl": "http://192.168.0.22:9988/OUGWarSecure/workflow?workflow=SendData",
+	"timeout": "60000",
+	"prefixName":[
+		{"fieldName" : "firstname"},
+		{"fieldName" : "Phone Number"}
+	],
+    "fields":[ 
+		{
+			"type": "text",
+			"mandatory": "true",
+			"keyIndex": "true",
+			"name":"firstname"
+		},
+		{
+			"type": "text",
+			"mandatory": "true",
+			"keyIndex": "true",
+			"name":"lastname"
+		},
+		
+	   
+		{
+			"type": "text",
+			"mandatory": "true",
+			"keyIndex": "true",
+			"name":"Phone Number"
+		},
+		
+	   
+		
+		{
+			"type": "image",
+			"mandatory": "true",
+			"keyIndex": "false",
+			"name":"Identity"
+		},
+		
+		{
+			"type": "image",
+			"mandatory": "true",
+			"keyIndex": "false",
+			"name":"Photo"
+		},
+		{
+			"type": "image",
+			"mandatory": "true",
+			"keyIndex": "false",
+			"name":"Contract Page 1"
+		}
+    ]
+}
+	
