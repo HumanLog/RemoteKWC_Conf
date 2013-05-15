@@ -1,0 +1,183 @@
+{
+    "applicationName": "Test Remote KWC",
+    "configVersion": "2.0",
+    "processes": [
+        {
+            "processName": "Create Customer",
+            "localFolderPath": "experiancontract",
+            "saveUrl": "http://192.168.0.22:9988/OUGWarSecure/workflow?workflow=SendData",
+            "timeout": "60000",
+			"processKey":"CREATE_CUSTOMER",
+            "prefixName": [
+                {
+                    "fieldName": "First Name"
+                },
+                {
+                    "fieldName": "Phone Number"
+                }
+            ],
+            "fields": [
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "First Name"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "Surname"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "Date of Birth"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Phone Number"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Customer Id"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Customer photo"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Document Id"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Application Form Page 1"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Application Form Page 2"
+                }
+            ]
+        },
+		
+		{
+            "processName": "Load Contract",
+            "localFolderPath": "experiancontract",
+            "saveUrl": "http://192.168.0.22:9988/OUGWarSecure/workflow?workflow=SendData",
+            "timeout": "60000",
+            "prefixName": [
+                {
+                    "fieldName": "firstname"
+                },
+                {
+                    "fieldName": "Phone Number"
+                }
+            ],
+            "fields": [
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "firstname"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "lastname"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "Phone Number"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Identity"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Photo"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Contract Page 1"
+                }
+            ]
+        },
+		
+		{
+            "processName": "Current Contract",
+            "localFolderPath": "experiancontract",
+            "saveUrl": "http://192.168.0.22:9988/OUGWarSecure/workflow?workflow=SendData",
+            "timeout": "60000",
+            "prefixName": [
+                {
+                    "fieldName": "firstname"
+                },
+                {
+                    "fieldName": "Phone Number"
+                }
+            ],
+            "fields": [
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "firstname"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "lastname"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "Phone Number"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Identity"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Photo"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Contract Page 1"
+                }
+            ]
+        }
+    ]
+}
