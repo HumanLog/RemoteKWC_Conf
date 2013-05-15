@@ -1,8 +1,10 @@
 {
     "applicationName": "Test Remote KWC",
+    "configVersion": "2.0",
     "processes": [
         {
-            "processName": "New Contract",
+            "processName": "Process 1",
+			"processKey": "process1",
             "localFolderPath": "experiancontract",
             "saveUrl": "http://192.168.0.22:9988/OUGWarSecure/workflow?workflow=SendData",
             "timeout": "60000",
@@ -19,7 +21,117 @@
                     "type": "text",
                     "mandatory": "true",
                     "keyIndex": "true",
-                    "name": "firstname"
+                    "name": "firstname1"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "lastname",
+					"hidden": "true"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "Phone Number",
+					"default": "+33 "
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Identity"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Photo"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Contract Page 1"
+                }
+            ]
+        },
+		
+		{
+            "processName": "Process 2",
+			"processKey": "process2",
+            "localFolderPath": "experiancontract",
+            "saveUrl": "http://192.168.0.22:9988/OUGWarSecure/workflow?workflow=SendData",
+            "timeout": "60000",
+            "prefixName": [
+                {
+                    "fieldName": "firstname"
+                },
+                {
+                    "fieldName": "Phone Number"
+                }
+            ],
+            "fields": [
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "firstname2"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "lastname"
+                },
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "Phone Number"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Identity"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Photo"
+                },
+                {
+                    "type": "image",
+                    "mandatory": "true",
+                    "keyIndex": "false",
+                    "name": "Contract Page 1"
+                }
+            ]
+        },
+		
+		{
+            "processName": "Process 3",
+			"processKey": "process3",
+            "localFolderPath": "experiancontract",
+            "saveUrl": "http://192.168.0.22:9988/OUGWarSecure/workflow?workflow=SendData",
+            "timeout": "60000",
+            "prefixName": [
+                {
+                    "fieldName": "firstname"
+                },
+                {
+                    "fieldName": "Phone Number"
+                }
+            ],
+            "fields": [
+                {
+                    "type": "text",
+                    "mandatory": "true",
+                    "keyIndex": "true",
+                    "name": "firstname3"
                 },
                 {
                     "type": "text",
