@@ -30,7 +30,7 @@
                     "name": "Surname"
                 },
                 {
-                    "type": "date",
+                    "type": "text",
                     "mandatory": "true",
                     "keyIndex": "true",
                     "name": "Date of Birth"
